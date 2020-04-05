@@ -20,3 +20,5 @@ rr = "run --release"
 [lib]
 name = "orthanc_gcp_storage"
 crate-type=["dylib"]
+
+[dependencies]

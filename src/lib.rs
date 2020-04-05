@@ -1,7 +1,9 @@
+use std::ffi::CString;
+
 pub struct OrthancPluginContext {}
 
 #[no_mangle]
-pub extern "C" fn OrthancPluginInitialize(context: OrthancPluginContext) -> i32 {
+pub extern "C" fn OrthancPluginInitialize(_context: OrthancPluginContext) -> i32 {
   println!("To be implemented");
   return 0;
 }
@@ -13,12 +15,10 @@ pub extern "C" fn OrthancPluginFinalize() -> () {
 
 #[no_mangle]
 pub extern "C" fn OrthancPluginGetName() -> *const char {
-  println!("To be implemented");
-  return &'c';
+  CString::new("gcp-storage").unwrap().into_raw() as *const char
 }
 
 #[no_mangle]
 pub extern "C" fn OrthancPluginGetVersion() -> *const char {
-  println!("To be implemented");
-  return &'c';
+  CString::new(env!("CARGO_PKG_VERSION")).unwrap().into_raw() as *const char
 }

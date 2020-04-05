@@ -4,6 +4,7 @@ WORKDIR /orthanc-gcp-storage
 
 # Install basic debian packages
 RUN apt-get update && apt-get install -y \
+  procps \
   build-essential \
   curl
 
