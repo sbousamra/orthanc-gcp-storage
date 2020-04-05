@@ -22,13 +22,13 @@ jobs:
           draft: false
           prerelease: false
       - name: Build Ubuntu
-        run: cmake . && make
-      - name: Upload liborthanc_gcp_storage_plugin.so
+        run: cargo br
+      - name: Upload liborthanc_gcp_storage.so
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./bin/liborthanc_gcp_storage_plugin.so
-          asset_name: liborthanc_gcp_storage_plugin.so
+          asset_path: ./bin/liborthanc_gcp_storage.so
+          asset_name: liborthanc_gcp_storage.so
           asset_content_type: "application/octet-stream"
