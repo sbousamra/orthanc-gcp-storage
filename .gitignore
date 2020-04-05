@@ -1,2 +1,9 @@
 .vscode
 build
+.env
+OrthancStorage
+CMakeFiles
+cmake_install.cmake
+liborthanc_gcp_storage.so
+CMakeCache.txt
+Makefile
