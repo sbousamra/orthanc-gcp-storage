@@ -1,0 +1,22 @@
+[package]
+name = "orthanc_gcp_storage"
+version = "0.0.1"
+description = "Orthanc plugin to interface with google cloud platform storage"
+authors = [
+  "Sebastian Bou-Samra <sebastian.bousamra@hotmail.com>",
+  "Dominic Bou-Samra <dominic.bou.samra@gmail.com>"
+]
+vcs = "git"
+
+[alias]
+t = "test"
+c = "check"
+f = "fmt"
+b = "build"
+br = "build --release"
+r = "run"
+rr = "run --release"
+
+[lib]
+name = "orthanc_gcp_storage"
+crate-type=["dylib"]

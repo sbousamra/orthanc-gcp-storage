@@ -1,9 +1,4 @@
 .vscode
-build
 .env
+target
 OrthancStorage
-CMakeFiles
-cmake_install.cmake
-liborthanc_gcp_storage.so
-CMakeCache.txt
-Makefile
