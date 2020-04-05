@@ -1,0 +1,3 @@
+{
+  "Plugins": ["/orthanc-gcp-storage/target/debug", "/orthanc-gcp-storage/target/release"]
+}
