@@ -22,3 +22,7 @@ name = "orthanc_gcp_storage"
 crate-type=["dylib"]
 
 [dependencies]
+libc = "0.2.68"
+
+[build-dependencies]
+cc = "1.0.50"

@@ -9,4 +9,3 @@ services:
       - .env
     volumes:
       - .:/orthanc-gcp-storage
-

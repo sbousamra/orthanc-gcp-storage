@@ -2,13 +2,15 @@ FROM jodogne/orthanc-plugins:1.5.8
 
 WORKDIR /orthanc-gcp-storage
 
-# Install basic debian packages
+# Install debian packages
 RUN apt-get update && apt-get install -y \
   procps \
   build-essential \
+  pkg-config \
+  libffi-dev \
+  libclang-dev \
+  clang \
   curl
-
-
 
 # Install rust
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
