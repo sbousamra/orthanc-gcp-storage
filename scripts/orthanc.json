@@ -1,3 +1,5 @@
 {
-  "Plugins": ["/orthanc-gcp-storage/target/debug", "/orthanc-gcp-storage/target/release"]
+  "Plugins": ["/orthanc-gcp-storage/target/debug"],
+  "AuthenticationEnabled": false,
+  "RemoteAccessAllowed": true
 }
